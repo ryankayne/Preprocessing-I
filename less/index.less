@@ -61,3 +61,132 @@ html, body {
 html {
 	font-size: 62.5%;
 }
+
+html {
+	background-color: silver;
+	display: flex;
+	justify-content: center;
+}
+
+body {
+	width: 80%;
+	background-color: white;
+}
+
+.troubleshoot() {
+    border: 4px solid black;
+}
+
+.header-format() {
+	font-size: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	min-height: 30%;
+	max-width: auto;
+	
+	font-family: 'Averia Serif Libre', cursive;
+}
+
+header {
+	height: 30%;
+	width: auto;
+
+
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2% 0;
+
+a {
+	font-size: 3rem;
+	text-decoration: none;
+	color: gray;
+} // This closes a
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+} // This closes nav
+
+.name {
+	.header-format();
+	font-size: 6rem;
+	padding: 1%;
+}
+
+.title {
+	.header-format();
+	font-size: 4rem;
+}
+
+.location {
+	.header-format();
+}
+
+} // This closes header 
+
+.mid-section {
+	background-color: gray;
+	height: 70%;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	.troubleshoot();
+
+	.placeholder1 {
+		width: 33%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.troubleshoot();
+
+		.headshot {
+			width: 90%;
+			 height: auto;
+			 max-height: 500px;
+			 max-width: 333px;
+			 padding: 4%;
+			 margin: 4%;
+			.troubleshoot();
+			
+		} // this closes headshot
+	} // this closes .placeholder1
+
+	.placeholder2 {
+		width: 67%;
+		height: auto;
+		.troubleshoot();
+
+	} // this closes .placeholder2
+} // this closes .mid-section
+
+.bottom-section {
+	background-color: gray;
+	height: 70%;
+	width: auto;
+	display: flex;
+	justify-content: space-evenly;
+	.troubleshoot();
+
+	.placeholder3 {
+		width: 50%;
+		height: auto;
+		.troubleshoot();
+
+	} // this closes .placeholder1
+
+	.placeholder4 {
+		width: 50%;
+		height: auto;
+		.troubleshoot();
+
+	} // this closes .placeholder2
+
+
+}
