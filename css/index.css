@@ -196,13 +196,13 @@ header .location {
   font-family: 'Averia Serif Libre', cursive;
 }
 .mid-section {
-  background-color: #1d1d1c;
-  background-image: linear-gradient(32deg, #1d1d1c 0%, #afa7a7 40%, #484646 100%);
+  background-color: lightslategray;
   width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   border-top-left-radius: 50px;
+  border-top: 2px solid black;
 }
 .mid-section .placeholder1 {
   width: 33%;
@@ -216,9 +216,10 @@ header .location {
   height: auto;
   max-height: 500px;
   max-width: 333px;
-  padding: 4%;
-  margin: 4%;
+  margin: 6%;
   border-radius: 40px;
+  border-bottom-right-radius: 0;
+  border: 1px solid darkslategray;
 }
 .mid-section .placeholder2 {
   width: 67%;
@@ -240,13 +241,11 @@ header .location {
 .mid-section .placeholder2 .split1 {
   height: 80%;
   width: 100%;
-  border: 4px solid black;
   font-size: 3rem;
   text-align: center;
   display: flex;
 }
 .mid-section .placeholder2 .split1 .box2 {
-  border: 4px solid black;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -262,27 +261,63 @@ header .location {
   text-align: center;
   font-size: 2rem;
   padding: 0 5% 0 5%;
+  text-align: justify;
 }
 .mid-section .placeholder2 .split1 .box3 {
-  border: 4px solid black;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.mid-section .placeholder2 .split1 .box3 h3 {
+  font-size: 4rem;
+  padding: 6%;
+}
+.mid-section .placeholder2 .split1 .box3 i {
+  font-size: 4rem;
+}
+.mid-section .placeholder2 .split1 .box3 .box3-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  margin-left: 27%;
+}
+.mid-section .placeholder2 .split1 .box3 .box3-1 p {
+  padding: 5%;
+}
+.mid-section .placeholder2 .split1 .box3 .box3-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  margin-left: 29%;
+}
+.mid-section .placeholder2 .split1 .box3 .box3-2 p {
+  padding: 5%;
+}
+.mid-section .placeholder2 .split1 .box3 .box3-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  margin-left: 30%;
+}
+.mid-section .placeholder2 .split1 .box3 .box3-3 p {
+  padding: 5%;
 }
 .bottom-section {
-  background-color: #0e0e0e;
-  background-image: linear-gradient(328deg, #0e0e0e 0%, #68c5d6 40%, #484646 100%);
+  background-color: #708090;
   height: 70%;
   width: auto;
   display: flex;
   justify-content: space-evenly;
-  border: 4px solid black;
+  border-top: 2px solid black;
 }
 .bottom-section .placeholder3 {
   width: 67%;
   height: auto;
-  border: 4px solid black;
 }
 .bottom-section .placeholder4 {
   width: 34%;
   height: auto;
-  border: 4px solid black;
 }

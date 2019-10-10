@@ -141,13 +141,13 @@ a:hover {
 } // This closes header 
 
 .mid-section {
-	background-color: #1d1d1c;
-	background-image: linear-gradient(32deg, #1d1d1c 0%, #afa7a7 40%, #484646 100%);
+	background-color: lightslategray;
 	width: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	border-top-left-radius: 50px;
+	border-top: 2px solid black;
 	
 
 	.placeholder1 {
@@ -161,9 +161,10 @@ a:hover {
 			 height: auto;
 			 max-height: 500px;
 			 max-width: 333px;
-			 padding: 4%;
-			 margin: 4%;
+			 margin: 6%;
 			 border-radius: 40px;
+			 border-bottom-right-radius: 0;
+			 border: 1px solid darkslategray;
 			
 			
 		} // this closes headshot
@@ -186,12 +187,11 @@ a:hover {
 		.split1 {
 			height: 80%;
 			width: 100%;
-			.troubleshoot();
 			.font-format();
 			display: flex;
 
 			.box2 {
-				.troubleshoot();
+				
 				display: flex;
 				flex-direction: column;
 				width: 50%;
@@ -206,39 +206,77 @@ a:hover {
 					.font-format();
 					font-size: 2rem;
 					padding: 0 5% 0 5%;
+					text-align: justify;
 				}
 			}
 
 
 			.box3 {
-				.troubleshoot();
+				
 				width: 50%;
-			}
+				display: flex;
+				flex-direction: column;
+				h3 {
+					font-size: 4rem;
+					padding: 6%;
+				}
+
+				i {
+					font-size: 4rem;
+				} // this closes i
+
+				.box3-1 {
+					.flex-center();
+					justify-content: left;
+					margin-left: 27%;
+					p {
+						padding: 5%;
+					}
+				} // this closes .box3-1
+
+				.box3-2 {
+					.flex-center();
+					justify-content: left;
+					margin-left: 29%;
+					p {
+						padding: 5%;
+					}
+				} // this closes .box3-2
+
+				.box3-3 {
+					.flex-center();
+					justify-content: left;
+					margin-left: 30%;
+					p {
+						padding: 5%;
+					}
+				} // this closes .box3-3
+			}			
 		}
 
 	} // this closes .placeholder2
 } // this closes .mid-section
 
 .bottom-section {
-	background-color: #0e0e0e;
-	background-image: linear-gradient(328deg, #0e0e0e 0%, #68c5d6 40%, #484646 100%);
+	background-color: #708090;
 	height: 70%;
 	width: auto;
 	display: flex;
 	justify-content: space-evenly;
-	.troubleshoot();
+	border-top: 2px solid black;
+	
 
 	.placeholder3 {
 		width: 67%;
 		height: auto;
-		.troubleshoot();
+	
 
 	} // this closes .placeholder1
 
 	.placeholder4 {
 		width: 34%;
 		height: auto;
-		.troubleshoot();
+		
 
 	} // this closes .placeholder2
 
