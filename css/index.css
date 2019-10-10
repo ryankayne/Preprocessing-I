@@ -228,6 +228,7 @@ header .location {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Averia Serif Libre', cursive;
 }
 .mid-section .placeholder2 .box1 {
   height: 30%;
@@ -307,17 +308,76 @@ header .location {
 }
 .bottom-section {
   background-color: #708090;
-  height: 70%;
+  height: 35%;
   width: auto;
   display: flex;
   justify-content: space-evenly;
   border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .bottom-section .placeholder3 {
   width: 67%;
   height: auto;
+  font-family: 'Averia Serif Libre', cursive;
+}
+.bottom-section .placeholder3 h3 {
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
+.bottom-section .placeholder3 p {
+  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 5% 0 5%;
+  text-align: justify;
 }
 .bottom-section .placeholder4 {
   width: 34%;
   height: auto;
+  font-family: 'Averia Serif Libre', cursive;
+}
+.bottom-section .placeholder4 h3 {
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  padding: 6%;
+}
+.bottom-section .placeholder4 p {
+  font-size: 3rem;
+  font-size: 2rem;
+  padding: 0 5% 0 5%;
+  text-align: center;
+}
+footer {
+  height: 15%;
+  width: auto;
+  background-color: white;
+}
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+footer nav a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: gray;
+}
+footer nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+footer div {
+  font-size: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
 }

@@ -88,6 +88,8 @@ body {
 	text-align: center;
 }
 
+@averia: 'Averia Serif Libre', cursive;
+
 .header-format() {
 	font-size: 2rem;
 	display: flex;
@@ -95,8 +97,7 @@ body {
 	justify-content: center;
 	min-height: 30%;
 	max-width: auto;
-	
-	font-family: 'Averia Serif Libre', cursive;
+	font-family: @averia;
 }
 
 header {
@@ -175,6 +176,7 @@ a:hover {
 		height: auto;
 		.flex-center();
 		flex-direction: column;
+		font-family: @averia;
 		
 
 		.box1 {
@@ -259,26 +261,85 @@ a:hover {
 
 .bottom-section {
 	background-color: #708090;
-	height: 70%;
+	height: 35%;
 	width: auto;
 	display: flex;
 	justify-content: space-evenly;
 	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	
 	
 
 	.placeholder3 {
 		width: 67%;
 		height: auto;
-	
+		font-family: @averia;
+
+		h3 {
+			.font-format();
+			.flex-center();
+			font-size: 4rem;
+			padding-top: 6%;
+			padding-bottom: 2%;
+		}
+
+		p {
+			.font-format();
+			font-size: 2rem;
+			padding: 0 5% 0 5%;
+			text-align: justify;
+		}
 
 	} // this closes .placeholder1
 
 	.placeholder4 {
 		width: 34%;
 		height: auto;
+		font-family: @averia;
 		
+		h3 {
+			.font-format();
+			.flex-center();
+			font-size: 4rem;
+			padding: 6%;
+		}
+
+		p {
+			.font-format();
+			font-size: 2rem;
+			padding: 0 5% 0 5%;
+			text-align: center;
+		}
 
 	} // this closes .placeholder2
 
 
+}
+
+footer {
+	height: 15%;
+	width: auto;
+	background-color: white;
+
+	nav {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 2%;
+
+		a {
+			font-size: 3rem;
+			text-decoration: none;
+			color: gray;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	div {
+		.font-format();
+		font-size: 1.4rem;
+	}
 }
