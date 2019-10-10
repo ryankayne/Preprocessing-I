@@ -137,15 +137,21 @@ body {
 /*MY CODE STARTS HERE */
 html {
   font-size: 62.5%;
-}
-html {
   background-color: silver;
-  display: flex;
-  justify-content: center;
+}
+@media (max-width: 500px) {
+  html {
+    background-color: white;
+  }
 }
 body {
   width: 80%;
   background-color: white;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
 }
 header {
   height: 33%;
@@ -199,10 +205,20 @@ header .location {
   background-color: lightslategray;
   width: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   border-top-left-radius: 50px;
   border-top: 2px solid black;
+}
+@media (max-width: 500px) {
+  .mid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    padding: 5% 0;
+  }
 }
 .mid-section .placeholder1 {
   width: 33%;
@@ -210,6 +226,12 @@ header .location {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .mid-section .placeholder1 {
+    width: 50%;
+    height: auto;
+  }
 }
 .mid-section .placeholder1 .headshot {
   width: 90%;
@@ -230,14 +252,25 @@ header .location {
   flex-direction: column;
   font-family: 'Averia Serif Libre', cursive;
 }
+@media (max-width: 500px) {
+  .mid-section .placeholder2 {
+    width: 100%;
+  }
+}
 .mid-section .placeholder2 .box1 {
   height: 30%;
   width: auto;
+  padding: 0 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
   text-align: center;
+}
+.mid-section .placeholder2 .box1 p {
+  background-color: white;
+  padding: 1%;
+  border: 1px solid darkslategray;
 }
 .mid-section .placeholder2 .split1 {
   height: 80%;
@@ -246,10 +279,23 @@ header .location {
   text-align: center;
   display: flex;
 }
+@media (max-width: 500px) {
+  .mid-section .placeholder2 .split1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .mid-section .placeholder2 .split1 .box2 {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .mid-section .placeholder2 .split1 .box2 {
+    width: 100%;
+  }
 }
 .mid-section .placeholder2 .split1 .box2 h3 {
   font-size: 3rem;
@@ -264,8 +310,13 @@ header .location {
   padding: 0 5% 0 5%;
   text-align: justify;
 }
+@media (max-width: 500px) {
+  .mid-section .placeholder2 .split1 .box2 p {
+    padding-bottom: 5%;
+  }
+}
 .mid-section .placeholder2 .split1 .box3 {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -309,16 +360,29 @@ header .location {
 .bottom-section {
   background-color: #708090;
   height: 35%;
+  min-height: 240px;
   width: auto;
   display: flex;
   justify-content: space-evenly;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+@media (max-width: 500px) {
+  .bottom-section {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .bottom-section .placeholder3 {
   width: 67%;
   height: auto;
   font-family: 'Averia Serif Libre', cursive;
+}
+@media (max-width: 500px) {
+  .bottom-section .placeholder3 {
+    width: 100%;
+  }
 }
 .bottom-section .placeholder3 h3 {
   font-size: 3rem;
@@ -327,7 +391,7 @@ header .location {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
-  padding-top: 6%;
+  padding-top: 30px;
   padding-bottom: 2%;
 }
 .bottom-section .placeholder3 p {
@@ -342,6 +406,12 @@ header .location {
   height: auto;
   font-family: 'Averia Serif Libre', cursive;
 }
+@media (max-width: 500px) {
+  .bottom-section .placeholder4 {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+}
 .bottom-section .placeholder4 h3 {
   font-size: 3rem;
   text-align: center;
@@ -349,7 +419,7 @@ header .location {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
-  padding: 6%;
+  padding: 30px;
 }
 .bottom-section .placeholder4 p {
   font-size: 3rem;
@@ -380,4 +450,9 @@ footer div {
   font-size: 3rem;
   text-align: center;
   font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  footer div {
+    padding-top: 5%;
+  }
 }
