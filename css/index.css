@@ -138,6 +138,9 @@ body {
 html {
   font-size: 62.5%;
   background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   html {
@@ -160,7 +163,7 @@ header {
 header nav {
   display: flex;
   justify-content: space-evenly;
-  margin: 2% 0;
+  margin: 2% 0 1% 0;
 }
 header nav a {
   font-size: 3rem;
